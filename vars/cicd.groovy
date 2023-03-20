@@ -4,7 +4,7 @@ def newDownload(repo)
 }
 def newBuild()
 {
-  sh "mvn package"
+  sh 'mvn package'
 }
 def newDeploy(ip,path)
 {
@@ -12,5 +12,5 @@ def newDeploy(ip,path)
 }
 def newTest(testpipeline)
 {
-  sh "java -jar /var/lib/jenkins/workspace/$(testpipeline}/testing.jar"
+  sh 'java -jar /var/lib/jenkins/workspace/$(testpipeline}/testing.jar'
 }
